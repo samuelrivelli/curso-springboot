@@ -1,6 +1,6 @@
 package com.cursoSpring.curso.resources;
 
-import com.cursoSpring.curso.entities.User;
+
 import com.cursoSpring.curso.entities.order.Order;
 import com.cursoSpring.curso.services.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/users")
-public class UserResource {
+@RequestMapping(value = "/orders")
+public class OrderResource {
 
     @Autowired
     private OrderService service;
@@ -25,8 +25,8 @@ public class UserResource {
     }
 
     @GetMapping(value = "/{id}")
-    public ResponseEntity<User> findById(@PathVariable Long id){
-        User obj = service.findById(id).getClient();
+    public ResponseEntity<Order> findById(@PathVariable Long id){
+        Order obj = service.findById(id);
         return ResponseEntity.ok().body(obj);
     }
 }
