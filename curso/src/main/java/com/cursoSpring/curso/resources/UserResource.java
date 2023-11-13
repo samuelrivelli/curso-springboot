@@ -1,7 +1,6 @@
 package com.cursoSpring.curso.resources;
 
 import com.cursoSpring.curso.entities.User;
-import com.cursoSpring.curso.entities.User;
 import com.cursoSpring.curso.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
