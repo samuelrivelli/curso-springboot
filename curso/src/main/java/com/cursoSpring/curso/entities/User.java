@@ -1,6 +1,5 @@
 package com.cursoSpring.curso.entities;
 
-import com.cursoSpring.curso.entities.order.Order;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 

@@ -1,7 +1,7 @@
 package com.cursoSpring.curso.services;
 
+import com.cursoSpring.curso.entities.Order;
 import com.cursoSpring.curso.entities.User;
-import com.cursoSpring.curso.entities.order.Order;
 import com.cursoSpring.curso.repositories.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,5 @@
-package com.cursoSpring.curso.entities.order;
+package com.cursoSpring.curso.entities;
 
-import com.cursoSpring.curso.entities.User;
 import com.cursoSpring.curso.entities.enums.OrderStatus;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
