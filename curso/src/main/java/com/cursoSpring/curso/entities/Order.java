@@ -33,7 +33,6 @@ public class Order implements Serializable {
 
     @OneToOne(mappedBy = "order", cascade = CascadeType.ALL)
     private Payment payment;
-
     public Order() {
     }
 
@@ -76,7 +75,6 @@ public class Order implements Serializable {
             this.orderStatus = orderStatus.getCode();
         }
     }
-
     public Set<OrderItem> getItems(){
         return items;
     }
@@ -89,6 +87,14 @@ public class Order implements Serializable {
         this.payment = payment;
     }
 
+    public Double getTotal(){
+        double sum = 0;
+        for(OrderItem x : items){
+            sum += x.getSubTotal();
+        }
+
+        return sum;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
